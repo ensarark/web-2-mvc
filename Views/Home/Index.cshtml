@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "";
+}
+
+    <link rel="stylesheet" href="~/css/Giris.css">
+    <script type="text/javaSricpt" src="~/js/Giris.js"  asp-append-version="true"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" asp-append-version="true" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" asp-append-version="true"/>
+    <link rel="shortcut icon" href="dumbbell-solid.svg" type="image/x-icon" asp-append-version="true">
+    <title>Giris</title>
+     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<body class="body" style="background-image: url(~/img/indir.jpeg);">
+    <div class="container containerr" id="container">
+        <div class="form-container sign-up-container ">
+            <img src="~/img/905A8B53-D0A3-45E3-8CDF-3AA4A5B9C24F.jpeg" class="blur size" alt="">
+            <div class="div-text">
+                <h1 style="font-size:50px">Tıkla ve Hemen Başla</h1>
+            </div>
+         
+        </div>
+        <div class="form-container sign-in-container">
+            <img src="~/img/905A8B53-D0A3-45E3-8CDF-3AA4A5B9C24F.jpeg" class="blur size" alt="">
+            <div class="div-text">
+                <h1 style="font-size:50px">Tıkla ve Hemen Başla</h1>
+            </div>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel1">
+                    <h1 class="h1 pb- fw-bolder text-dark" style="font-size: 45px;">Giriş Yap</h1><br><br>
+                    <form action="post"  class="col-12 from" onsubmit="return kontrol(this);">
+                        <input name="adiniz" id="FirstName" namme="FirstName" class=" border-0 border-bottom text-box1 "
+                            style="font-size: 20px; color: black;"  placeholder="Adınız"><br>
+                        <input name="sifre"  id="LastName" name="LastName" type="password" class=" border-0 border-bottom text-box2 " style="font-size: 20px;"
+                            placeholder="Şifreniz"><br>
+                        <input type="submit" class="btn btn-outline-dark btn-lg" value="Devam Et">
+                
+                    </form>
+                    <p class="fs-5 text-dark" style="position: relative;top:70px;">Hesabınız yoksa mu hemen <a href="Products/uyeol">üye ol</a></p>
+                </div>
+                <div class="overlay-panel2 overlay-right col-6">
+                    <h1 class="h1 pb-5  fw-bolder" style="font-size: 45px;">Hoşgeldiniz</h1>
+                    <p style="font-size: 17px;" class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente quibusdam nulla error atque rem culpa?</p>
+                    <button type="button" class="btn btn-outline-light btn-lg" id="solkaydır">Devam Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  d-block alt">
+        <div class="mx-auto d-flex f text-center">
+            <div class="cr1"><i class="fa-brands fa-instagram fa-3x ico"></i></div>
+            <div class="cr2"><i class="fa-brands fa-facebook fa-3x ico"></i></div>
+            <div class="cr3"><i class="fa-brands fa-discord fa-3x ico"></i></div>
+            <div class="cr4"><i class="fa-brands fa-youtube fa-3x ico"></i></div>
+            <div class="cr5"><i class="fa-brands fa-whatsapp fa-3x ico"></i></div>
+        </div>
+        </div>
+
+</body>
+<script>
+    
+    const signUpButton = document.getElementById('solkaydır');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+   
+    function arttir(){
+ var tr =document.getElementById("tr");
+var sonuc=document.getElementById("sonuc");
+sonuc.value=Number(sonuc.value)+1;
+console.log(sonuc.value)
+if(sonuc.value==3)
+{
+  tr.style.display="block"
+}
+}
+ function kontrol(form) {
+        var adiniz = form.adiniz.value;
+        var sifre = form.sifre.value;
+        var sonuc=document.getElementById("sonuc");
+        var gizle=document.getElementById("gizle");
+        var ad ="ensar";
+        var sf ="1234"
+        var son=3;
+
+        if (adiniz.length === 0) {
+            alert("Lütfen Adınızı Girin");
+            return false;
+        }
+
+        if (sifre.length === 0) {
+            alert("Lütfen şifrenizi girin");
+            return false;
+        }
+        if (adiniz==ad && sifre==sf) {
+            window.location = "Products/AnaSayfa"
+            return false;
+        }
+        else{
+            alert("Lütfen Şifreniiz veya Adınızı Kontrol Ediniz ")
+            sonuc.value=Number(sonuc.value)+1;
+            console.log(sonuc.value)
+            if(sonuc.value==3){
+             gizle.style.display="block"
+            }
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</html>

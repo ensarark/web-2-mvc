@@ -1,0 +1,105 @@
+.sınıf{
+    height: 250px;
+    background-image: url("../img/sınıfoto.png");
+    background-size: 100% 110%;
+    background-position-y: 0%;
+    position: relative;
+    bottom: -30px;
+    z-index: -10;
+}
+.sınıf h1{
+   line-height: 150px;
+}
+.body-cnt{
+  background-image: url()!important;
+}
+
+.snf-hg{
+height: 50px;
+position: relative;
+bottom: 20px;
+background-color: rgb(214, 208, 208);
+}
+.ana-sınıf{
+   height: 100%;
+}
+.sınıf-div{
+    height: 100%;
+}
+.sınıf-div p{
+  margin-bottom: 0px;
+}
+.sınıf-div img{
+    width: 100%;
+    transition:all 0.3s;
+    cursor: pointer;
+}
+.sınıf-div img:hover{
+    opacity: 0.7;
+    filter: grayscale(250%);
+}
+.sınıf-div-ic{
+    height: 500px;
+}
+.yazırenk{
+    color: #434345;
+}
+@media screen and (max-width: 2500px){
+
+    .foat{
+      background-size: 170% 150%!important;
+      background-position-x: 50%;
+      height: 50%!important;
+    }
+   
+  }
+  @media screen and (max-width: 1200px){
+
+    .foat{
+      background-size: 170% 150%!important;
+      background-position-x: 50%;
+      height: 100%!important;
+    }
+   
+  }
+  .hg-700{
+    height: 100%;
+  }
+  #disle{
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #ff6479;
+    border: transparent;
+  }
+  #disle:hover{
+    background-color: #ff0022;
+    transition: 0.3s;
+ }
+ .ico{
+  position: relative;
+  bottom: 0!important;
+  color: black!important;
+ }
+ .ico:hover{
+  border: 2px solid black;
+ }
+ a:link{
+  text-decoration: none;
+}
+ a:visited{
+  color: black;
+}
+a:hover{
+  color: rgb(51, 43, 43)!important;
+  text-decoration:underline;
+}
+.t{
+  height: 100px;
+  background-color: rgb(224, 216, 216);
+  border-left:1px solid red ;
+}
+.bro div p:first-child{
+color: rgb(158, 146, 146);
+}

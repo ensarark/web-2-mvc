@@ -1,0 +1,102 @@
+@{
+    ViewData["Title"] = "Uyeol";
+    Layout = "";
+}
+@model Products
+
+<link rel="stylesheet" href="~/css/Giris.css" asp-append-version="true">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<div class="container  mt-3 ">
+ <div class="col-5  uyeol mx-auto  text-center" > 
+  <h2 class="fw-bolder"style="font-size:35px;">Kayıt Ol</h2>
+   <form class="form-horizontal "  asp-controller="Products"  method="post">
+  <div class="mb-3 mt-3  mx-auto">
+    <input type="text" for="Name" class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="FirstName" placeholder="Adınız">
+  </div>
+  <div class="mb-3 textbox  mx-auto">
+    <input type="text"  for="Name" class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="LastName" placeholder="SoyAdınız">
+  </div>
+  <div class="mb-3 textbox  mx-auto">
+    <input type="text" for="Name" class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="Age" placeholder="Yaşınız">
+  </div>
+   <div class="mb-3 textbox  mx-auto">
+    <input type="text" for="Name" class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="length" placeholder="Boyunuz">
+  </div>
+   <div class="mb-3 textbox  mx-auto">
+    <input type="text" for="Name" class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="wage" placeholder="Kilonuz">
+  </div>
+  <div class="mb-3 textbox  mx-auto">
+    <input type="text" for="Name" class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="urun1" placeholder="Başlayış tarihiniz">
+  </div>
+  <div class="mb-3 textbox  mx-auto">
+    <input type="Datetime"  class=" border-0 border-bottom text-box1 "
+            style="font-size: 20px; color: black;background-color: transparent;"  asp-for="Tarih" placeholder=" tarihiniz">
+  </div><br>
+ <a href="Adminpanel"> <button type="submit"  class="btn-lg btn-dark col-3 ">Kaydet</button></a>
+ </form>
+ </div>
+</div>
+
+    
+<script>
+    const signUpButton = document.getElementById('solkaydır');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    function kontrol(form) {
+        var adiniz = form.adiniz.value;
+        var sifre = form.sifre.value;
+        var sonuc=document.getElementById("sonuc");
+        var gizle=document.getElementById("gizle");
+        var ad ="ensar";
+        var sf ="1234"
+        var son=3;
+
+        if (adiniz.length === 0) {
+            alert("Lütfen Adınızı Girin");
+            return false;
+        }
+
+        if (sifre.length === 0) {
+            alert("Lütfen şifrenizi girin");
+            return false;
+        }
+        if (adiniz==ad && sifre==sf) {
+            window.location = "AnaSayfa.html"
+            return false;
+        }
+        else{
+            alert("Lütfen Şifreniiz veya Adınızı Kontrol Ediniz ")
+            sonuc.value=Number(sonuc.value)+1;
+            console.log(sonuc.value)
+            if(sonuc.value==3){
+             gizle.style.display="block"
+            }
+            return false;
+        }
+
+        return true;
+    }
+    function arttir(){
+ var tr =document.getElementById("tr");
+var sonuc=document.getElementById("sonuc");
+sonuc.value=Number(sonuc.value)+1;
+console.log(sonuc.value)
+if(sonuc.value==3)
+{
+  tr.style.display="block"
+}
+}
+
+</script>
+

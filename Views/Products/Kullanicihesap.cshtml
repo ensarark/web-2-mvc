@@ -1,0 +1,156 @@
+@{
+    ViewData["Title"] = "Kullanicihesap";
+}
+@model Products
+<link rel="stylesheet" href="~/css/sınıflar.css" asp-append-version="true" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bölümler</title>
+<link rel="stylesheet" href="AnaSayfa.css">
+<link rel="stylesheet" href="Market.css">
+<link rel="stylesheet" href="sınıflar.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="body-cnt">
+
+    <div class="container-fluid sınıf  badge">
+        <h1 class="fs-7 fw-bolder text-light text-center pt-5">Kullanıcı</h1>
+    </div>
+    <div class="container-fluid  snf-hg pt-3 fs-5">
+        <p class="text-secondary text-center ">Home / Classes</p>
+    </div>
+    <div class="container-fluid  hg-100 overflow-hidden d-inline">
+        <div class="col-12">
+            <div class="col-10 container mx-auto  hg-200">
+                <div class="row">
+                    <div class="col-xl-5 col-md-12 hg-700">
+                        <div class="col-12 mx-auto"> <img src="~/img/kullanıcı.jpg" class="container-fluid" alt="">
+                        </div>
+                        <div class="col-6  mx-auto"> <button id="disle"
+                                class="market-btn fs-1 text-light fw-bolder fs-3">
+                                <a class="text-decoration-none text-light" href="adminpanel">Listeye Dön</a></button></div>
+                        <div class="text-center  mt-4">
+                            <button class=" ico rounded-circle me-1 mb-1"><i
+                                    class="fa-brands fa-instagram"></i></a></button>
+                            <button class=" ico rounded-circle me-1 mb-1"><i class="fa-brands fa-twitter "></i></button>
+                            <button class=" ico rounded-circle me-1 mb-1"><i
+                                    class="fa-brands fa-whatsapp "></i></button>
+                            <button class=" ico rounded-circle mb-1"><i class="fa-brands fa-linkedin "></i></button>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-7 col-md-12  hg-700 ">
+                        <div class="col-10 mx-auto hg-100 ">
+                            <div class=" fs-3 fw-bolder bro mt-3">
+                                <form class="form-horizontal " asp-controller="Products" asp-action="Update" method="post">
+  <div class="mb-3 mt-3  mx-auto">
+    <label class="form-label float-start" for="Name">Adınız:</label>
+    <input type="text" class="form-control"  placeholder="Adını giriniz." asp-for="FirstName">
+  </div>
+  <div class="mb-3  mx-auto">
+    <label for="Price" class="form-label float-start">SoyAdınız:</label>
+    <input type="text" class="form-control"  placeholder="SoyAdını giriniz" asp-for="LastName">
+  </div>
+  <div class="mb-3  mx-auto">
+    <label for="Price" class="form-label float-start">Yaşınız:</label>
+    <input type="text" class="form-control"  placeholder="Yaşınızı Giriniz" asp-for="Age">
+  </div>
+  <div class="mb-3  mx-auto">
+    <label for="Price" class="form-label float-start">Ne kadar süre çalışacağınız:</label>
+    <input type="text" class="form-control"  placeholder="Ne kadar çalışacağınızı giriniz" asp-for="length">
+  </div>
+   <div class="mb-3  mx-auto">
+    <label for="Price" class="form-label float-start">Ne kadar süre çalışacağınız:</label>
+    <input type="text" class="form-control"  placeholder="Ne kadar çalışacağınızı giriniz" asp-for="wage">
+  </div>
+  <button type="submit" href="Products/Update" class="btn btn-primary col-3 "> Güncelle</button>
+</form>
+                            </div>
+                        </div>
+
+                        <div class="col-10 mx-auto">
+
+                            <h2 class="mt-5">Fitness</h2>
+                            <div class="progress mt-0" style="height:  13px; border-radius: 30px;">
+                                <div class="progress-bar " role="progressbar"
+                                    style="width: 25%; background-color:#3eb0b3 ;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <h2 class="mt-5">CrossFit</h2>
+                            <div class="progress" style="height:  13px; border-radius: 30px;">
+                                <div class="progress-bar " role="progressbar"
+                                    style="width: 50%; background-color:#6484b3;" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <h2 class="mt-5">Yoga</h2>
+                            <div class="progress" style="height:  13px; border-radius: 30px;">
+                                <div class="progress-bar " role="progressbar"
+                                    style="width: 75%; background-color:#e88563" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <h2 class="mt-5">Bodybuilding</h2>
+                            <div class="progress" style="height:  13px; border-radius: 30px;">
+                                <div class="progress-bar " role="progressbar"
+                                    style="width: 100%;background-color:#ff7789" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
+<div id="page-content" class="col-12">
+            <div class="container text-center ">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <h1 class="fw-light mt-4 text-white">Sticky Footer using Flexbox</h1>
+                        <p class="lead text-white-50">Use just two Bootstrap utility classes and three custom CSS rules
+                            and you will have a flexbox enabled sticky footer for your website!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 fot">
+            <div class="container text-center">
+                <p class="fs-4">Copyright &copy; Your Website</p>
+            </div>
+
+
+<div class="container-fluid loader-container"  style="positio:Absolute;left:0px; backgorund-color:white;z-index: 99999; position:fixed"
+    id="sil">
+    <div class="loader-div">
+        <svg viewBox="0 0 100 100">
+            <defs>
+                <filter id="shadow">
+                    <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#fc6767" />
+                </filter>
+            </defs>
+            <circle id="spinner" class="loader-spinner" cx="50" cy="50" r="45" />
+        </svg>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="market/market1.js"></script>
+<script src="market/market2.js"></script>
+<script src="market/market3.js"></script>
+<script src="market/market4.js"></script>
+<script src="market/market5.js"></script>
+<script src="market/market6.js"></script>
+<script src="market.js"></script>
+<script src="AnaSayfa.js"></script>

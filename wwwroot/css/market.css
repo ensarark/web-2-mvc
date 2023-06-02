@@ -1,0 +1,205 @@
+
+.snf-hg{
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+    background-color: rgb(247, 245, 245)!important;
+    }
+    .snf-h2{
+        height: 50px;
+        position: relative;
+        bottom: 0px!important;
+        background-color: rgb(247, 245, 245)!important;
+        }
+    .market{
+    height: 900px;
+    }
+    .market2{
+        height: 900px;
+        }
+    .ilerigeri{
+        height: 70px;
+    }
+    
+    .market img{
+        width: 100%;
+    }
+    .market-div-1{
+        height: 100%;
+         background-color:white;
+        
+    }
+    .market-div-1 p{
+        color: pink;
+        line-height: 17px;
+    }
+    .market-div:hover{
+        filter: drop-shadow(0px 5px 8px  rgb(165, 160, 160));
+    }
+    #disle2,#disle3,#disle4,#disle5,#disle6,#disle7{
+        visibility: hidden;
+       width: 100%;
+       height: 60px;
+       border-radius: 30px;
+       background-color: #ff6479;
+       border: transparent;
+    }
+    #disle2:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+     #disle3:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+     #disle4:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+     #disle5:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+     #disle6:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+     #disle7:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+     .body-cnt{
+        background-image: url()!important;
+      }
+      
+     .btu{
+        width: 25%;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #ff6479;
+        border: transparent;
+     }
+     .btu:hover{
+        background-color: #ff0022;
+        transition: 0.3s;
+     }
+    .yıldız{
+        height: 30px;
+    }
+    .market-hg{
+        height: 100%;
+    }
+    .market-div{
+     height: 600px;
+      transition: all 0.3s;
+    }
+    .position{
+    position: relative;
+    top: 250px;
+    }
+    .hg-100{
+        height: 100%;
+    }
+    .hg-500{
+        height: 500px;
+    }
+    .o{
+        height: 370px;
+        background-image: url("../img/market-1.jpg");
+        background-size: 100% 100% ;
+        background-repeat: no-repeat;
+        z-index: 9999;
+    }
+    .img{
+        width: 100px;
+        height: 100px; 
+    }
+    
+    .tt img{
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    .tt img:hover{
+       border: 4px solid white;
+       filter: drop-shadow(3px 5px 7px rgb(139, 137, 137));
+    }
+    .market-sag{
+        height: 460px;
+        line-height: 10px;
+    }
+    .foat{
+        position: relative;
+        top: 20px!important;
+    }
+    .market1-alt{
+    height: 600px;
+    
+    }
+    .oro{
+        display: none;
+    }
+    @media screen and (max-width: 1200px){
+    
+        .oro{
+            display: block;
+        }
+      .market1-alt{
+        display: none;
+      }
+      #disle2,#disle3,#disle4,#disle5,#disle6,#disle7{
+        position: relative;
+        bottom: 40px;
+      }
+      #disle2{
+        position: relative;
+        bottom: 40px;
+      }
+      .position{
+        position: relative;
+        top: 700px;
+      }
+       
+      }
+    .hg-50{
+    height: 50px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border: 2px solid grey;
+    }
+    .hg-200{
+        height: 100%;
+        border-top: 2px solid grey;
+    }
+    .market-div-1{
+        height: 550px!important;
+    }
+    .market-div-1 img{
+       width: 100%;
+    }
+    .btu{
+        border: transparent;
+    }
+    .btu:active{
+        background-color: #ff6479;
+        border: transparent;
+        transform:scale(95%);
+        transition: 0s!important;
+    }
+    .h70{
+    height: 75px;
+    }
+    .h70 img{
+        width: 50px;
+    }
+     
+    .oranged{
+        color: orangered;
+        border: 1px solid orangered;
+        border-radius: 10px;
+    }
+    .sepetimg{
+        height: 50px;
+        border-radius: 8px;
+    }
+    
+    

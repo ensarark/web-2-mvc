@@ -1,0 +1,94 @@
+
+body {
+    background: linear-gradient(to right,  rgb(255, 76, 5),rgb(243, 237, 225));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-family: 'Montserrat', sans-serif;
+     height: 100vh;
+     margin: -20px 0 50px;
+     animation: gradient 15s ease infinite;
+     overflow: hidden;
+     
+ }
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+         background-size: 200%;
+        
+     }
+     50% {
+         background-position: 100% 80%;
+         background-size: 250%;
+     }
+     100% {
+         background-position: 10% 40%;
+         background-size: 300%;
+     }
+ }
+ 
+ @keyframes btn {
+    0% {
+     transform : translate( 0, 150% );
+     opacity: 0;
+   }
+   100% {
+     transform : translate( 0, 30% );
+     opacity: 10;
+
+   }
+   }
+   @keyframes btn3 {
+    0% {
+     transform : translate( 0, 150% );
+     opacity: 0;
+   }
+   100% {
+     transform : translate( 0, 30% );
+     opacity: 10;
+
+   }
+   }
+.ico{
+    position: relative;
+    top: 0px;
+    animation: btn 9.5s;
+color: orangered!important;
+border-color: orangered!important;
+width: 40px!important;
+height: 40px!important;
+}
+
+.button-87 {
+    text-decoration: none;
+    animation: btn 6.5s;
+  margin: 10px;
+  padding: 15px 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-size: 19px;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
